@@ -2,7 +2,7 @@
 
 @charset "UTF-8";
 @import 'https://cdn.bootcdn.net/ajax/libs/font-awesome/6.4.0/css/all.min.css';
-@import 'default';
+/* @import 'default'; */
 
 :root {
     --font-family-main: 'Linux Libertine', serif;
