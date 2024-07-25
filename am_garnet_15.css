@@ -42,7 +42,7 @@ section {
     font-size: 29px;
     height: 720px;
     justify-content: center;
-    padding: 0px 75px 50px 75px;
+    padding: 0px 75px 25px 75px;
     width: 1280px;
     background: var(--color-bg);
     color: var(--color-main);
@@ -142,8 +142,8 @@ a::after {
 
 section::after {
     font-size: var(--font-size-page);
-    margin-right: -10px;
-    margin-bottom: -14px;
+    margin-right: 0px;
+    margin-bottom: 0px;
     content: attr(data-marpit-pagination) "/" attr(data-marpit-pagination-total);
     letter-spacing: 3px;
     padding: 4px 10px;
