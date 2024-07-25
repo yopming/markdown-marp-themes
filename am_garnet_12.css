@@ -26,6 +26,7 @@
     --color-coverbg: #73000a;
     --color-much: #73000a;
     --color-trans: #73000a;
+    --color-bg: #fdfcff;
     --color-navbar-bg: #edddde;
     --color-code-bg: #f6eeef;
 }
@@ -43,6 +44,8 @@ section {
     justify-content: center;
     padding: 78.5px;
     width: 1280px;
+    background: var(--color-bg);
+    color: var(--color-main);
 }
 
 h1 {
