@@ -1,18 +1,14 @@
 /* @theme am_garnet */
-
 @charset "UTF-8";
 @import 'https://cdn.bootcdn.net/ajax/libs/font-awesome/6.4.0/css/all.min.css';
-/* @import 'default'; */
 
+/* @import 'default'; */
 :root {
     --font-family-main: 'Linux Libertine', serif;
     --font-family-title: 'Philosopher', sans-serif;
     --font-family-footer: 'Roboto', sans-serif;
     --font-family-code: 'Iosevka', monospace;
-    --font-size-1: 48px;
-    --foot-size-subtitle: 38px;
-    --font-size-2-3: 38px;
-    --font-size-4-5: 30px;
+    --foot-size-subtitle: 42px;
     --font-size-main: 26px;
     --font-size-footer: 22px;
     --font-size-page: 12px;
@@ -35,7 +31,6 @@ section {
     font-family: var(--font-family-main);
     font-size: var(--font-size-main);
     color: var(--color-main);
-
     font-size: 29px;
     height: 720px;
     justify-content: center;
@@ -43,32 +38,44 @@ section {
     width: 1280px;
     background: var(--color-bg);
     color: var(--color-main);
-
     background-image: linear-gradient(rgba(0, 0, 0, .03) .05em, transparent .15em), linear-gradient(90deg, rgba(0, 0, 0, .03) 0.05em, transparent 0.15em);
     background-size: 3em 3em;
 }
 
-h1 {
+h1,
+h2,
+h3,
+h4,
+h5 {
+    font-weight: bold;
     font-family: var(--font-family-title);
-    font-size: var(--font-size-1);
-    color: var(--color-main);
 }
 
-
 h2,
-h3 {
-    font-family: var(--font-family-title);
-    font-size: var(--font-size-2-3);
+h3,
+h4,
+h5 {
     color: var(--color-much);
+}
+
+h1 {
+    font-size: 72px;
+    padding-top: 280px;
+    color: rgba(0, 0, 0);
+}
+
+h2 {
+    font-size: 48px;
+}
+
+h3 {
+    font-size: 42px;
 }
 
 h4,
 h5 {
-    font-family: var(--font-family-title);
-    font-size: var(--font-size-4-5);
-    color: var(--color-much);
+    font-size: 30px;
 }
-
 
 ol {
     line-height: 1.4rem;
@@ -166,7 +173,6 @@ footer::after {
     content: "";
 }
 
-
 .MathJax {
     font-size: 0.95rem;
 }
@@ -250,7 +256,6 @@ img[alt*='#c'] {
     display: block;
     margin: auto;
 }
-
 
 section.cover_a {
     width: 100%;
@@ -639,7 +644,6 @@ section.toc_b img {
     filter: brightness(30%) contrast(70%) grayscale(100%);
 }
 
-
 section.fglass ul {
     padding: 20px 20px 20px 60px;
     margin-left: -25px;
@@ -647,7 +651,6 @@ section.fglass ul {
     background-color: white;
     box-shadow: 1px 1px 12px rgb(215, 224, 235);
 }
-
 
 section.cols2_ol_sq h2,
 section.cols2_ol_sq h3 {
@@ -757,7 +760,6 @@ section.cols2_ol_ci ul li:hover::before {
     transform: rotate(360deg);
 }
 
-
 section.cols2_ul_sq h2,
 section.cols2_ul_sq h3 {
     margin-left: -2%;
@@ -798,7 +800,6 @@ section.cols2_ul_sq ul li:before {
     width: 10px;
 }
 
-
 section.cols2_ul_ci h2,
 section.cols2_ul_ci h3 {
     margin-left: -2%;
@@ -838,7 +839,6 @@ section.cols2_ul_ci ul li:before {
     height: 10px;
     width: 10px;
 }
-
 
 section.cols-2 {
     overflow: visible;
@@ -945,7 +945,6 @@ section.cols-3 .rimg {
     justify-content: center;
 }
 
-
 section.cols-2-73 {
     overflow: visible;
     display: grid;
@@ -1009,7 +1008,6 @@ section.cols-2-64 h3 {
 section.cols-2-64 .ldiv {
     grid-area: leftpanel;
     margin-top: -2%;
-
 }
 
 section.cols-2-64 .rdiv {
@@ -1096,7 +1094,6 @@ section.cols-2-46 h3 {
 section.cols-2-46 .ldiv {
     grid-area: leftpanel;
     margin-top: -2%;
-
 }
 
 section.cols-2-46 .rdiv {
@@ -1136,7 +1133,6 @@ section.bq-purple blockquote p>strong {
     font-size: 0.9rem;
 }
 
-
 section.bq-blue blockquote>p::before,
 section.bq-red blockquote>p::before,
 section.bq-green blockquote>p::before,
@@ -1167,7 +1163,6 @@ section.bq-black blockquote>p:not(:nth-child(1)) {
     padding: 1% 2%;
     background-color: rgb(228, 234, 246);
 }
-
 
 section.bq-blue blockquote>p:nth-child(1) {
     background-color: rgb(129, 161, 193);
@@ -1238,7 +1233,6 @@ section.lastpage h6 {
     font-family: var(--font-family-title);
     font-size: var(--font-size-1);
     color: var(--color-title);
-
     display: grid;
     padding: 0;
     height: 100%;
@@ -1263,7 +1257,6 @@ section.lastpage div>ul {
     gap: 5em;
     align-content: center;
     list-style: none;
-
 }
 
 section.lastpage ul>li>ul>li {
@@ -1393,7 +1386,6 @@ table>tfoot>tr>th,
 table>tfoot>tr>td {
     border: 0px solid white;
 }
-
 
 .hljs {
     display: block;
@@ -1624,4 +1616,109 @@ section.hugetext em {
 
 section.hugetext pre {
     font-size: 120%;
+}
+
+/*** CSS for code highlight **/
+/* PrismJS 1.29.0
+https://prismjs.com/download.html#themes=prism&languages=markup+css+clike+javascript+abap+abnf+actionscript+ada+agda+al+antlr4+apacheconf+apex+apl+applescript+aql+arduino+arff+armasm+arturo+asciidoc+aspnet+asm6502+asmatmel+autohotkey+autoit+avisynth+avro-idl+awk+bash+basic+batch+bbcode+bbj+bicep+birb+bison+bnf+bqn+brainfuck+brightscript+bro+bsl+c+csharp+cpp+cfscript+chaiscript+cil+cilkc+cilkcpp+clojure+cmake+cobol+coffeescript+concurnas+csp+cooklang+coq+crystal+css-extras+csv+cue+cypher+d+dart+dataweave+dax+dhall+diff+django+dns-zone-file+docker+dot+ebnf+editorconfig+eiffel+ejs+elixir+elm+etlua+erb+erlang+excel-formula+fsharp+factor+false+firestore-security-rules+flow+fortran+ftl+gml+gap+gcode+gdscript+gedcom+gettext+gherkin+git+glsl+gn+linker-script+go+go-module+gradle+graphql+groovy+haml+handlebars+haskell+haxe+hcl+hlsl+hoon+http+hpkp+hsts+ichigojam+icon+icu-message-format+idris+ignore+inform7+ini+io+j+java+javadoc+javadoclike+javastacktrace+jexl+jolie+jq+jsdoc+js-extras+json+json5+jsonp+jsstacktrace+js-templates+julia+keepalived+keyman+kotlin+kumir+kusto+latex+latte+less+lilypond+liquid+lisp+livescript+llvm+log+lolcode+lua+magma+makefile+markdown+markup-templating+mata+matlab+maxscript+mel+mermaid+metafont+mizar+mongodb+monkey+moonscript+n1ql+n4js+nand2tetris-hdl+naniscript+nasm+neon+nevod+nginx+nim+nix+nsis+objectivec+ocaml+odin+opencl+openqasm+oz+parigp+parser+pascal+pascaligo+psl+pcaxis+peoplecode+perl+php+phpdoc+php-extras+plant-uml+plsql+powerquery+powershell+processing+prolog+promql+properties+protobuf+pug+puppet+pure+purebasic+purescript+python+qsharp+q+qml+qore+r+racket+cshtml+jsx+tsx+reason+regex+rego+renpy+rescript+rest+rip+roboconf+robotframework+ruby+rust+sas+sass+scss+scala+scheme+shell-session+smali+smalltalk+smarty+sml+solidity+solution-file+soy+sparql+splunk-spl+sqf+sql+squirrel+stan+stata+iecst+stylus+supercollider+swift+systemd+t4-templating+t4-cs+t4-vb+tap+tcl+tt2+textile+toml+tremor+turtle+twig+typescript+typoscript+unrealscript+uorazor+uri+v+vala+vbnet+velocity+verilog+vhdl+vim+visual-basic+warpscript+wasm+web-idl+wgsl+wiki+wolfram+wren+xeora+xml-doc+xojo+xquery+yaml+yang+zig */
+code[class*=language-], pre[class*=language-] {
+    color: #000;
+    background: 0 0;
+    text-shadow: 0 1px #fff;
+    font-family: 'Iosevka', monospace;
+    font-size: 1em;
+    text-align: left;
+    white-space: pre;
+    word-spacing: normal;
+    word-break: normal;
+    word-wrap: normal;
+    line-height: 1.5;
+    -moz-tab-size: 4;
+    -o-tab-size: 4;
+    tab-size: 4;
+    -webkit-hyphens: none;
+    -moz-hyphens: none;
+    -ms-hyphens: none;
+    hyphens: none
+}
+
+code[class*=language-] ::-moz-selection, code[class*=language-]::-moz-selection, pre[class*=language-] ::-moz-selection, pre[class*=language-]::-moz-selection {
+    text-shadow: none;
+    background: #b3d4fc
+}
+
+code[class*=language-] ::selection, code[class*=language-]::selection, pre[class*=language-] ::selection, pre[class*=language-]::selection {
+    text-shadow: none;
+    background: #b3d4fc
+}
+
+@media print {
+    code[class*=language-], pre[class*=language-] {
+        text-shadow: none
+    }
+}
+
+pre[class*=language-] {
+    padding: 1em;
+    margin: .5em 0;
+    overflow: auto
+}
+
+:not(pre)>code[class*=language-], pre[class*=language-] {
+    background: #f5f2f0
+}
+
+:not(pre)>code[class*=language-] {
+    padding: .1em;
+    border-radius: .3em;
+    white-space: normal
+}
+
+.token.cdata, .token.comment, .token.doctype, .token.prolog {
+    color: #708090
+}
+
+.token.punctuation {
+    color: #999
+}
+
+.token.namespace {
+    opacity: .7
+}
+
+.token.boolean, .token.constant, .token.deleted, .token.number, .token.property, .token.symbol, .token.tag {
+    color: #905
+}
+
+.token.attr-name, .token.builtin, .token.char, .token.inserted, .token.selector, .token.string {
+    color: #690
+}
+
+.language-css .token.string, .style .token.string, .token.entity, .token.operator, .token.url {
+    color: #9a6e3a;
+    background: hsla(0, 0%, 100%, .5)
+}
+
+.token.atrule, .token.attr-value, .token.keyword {
+    color: #07a
+}
+
+.token.class-name, .token.function {
+    color: #dd4a68
+}
+
+.token.important, .token.regex, .token.variable {
+    color: #e90
+}
+
+.token.bold, .token.important {
+    font-weight: 700
+}
+
+.token.italic {
+    font-style: italic
+}
+
+.token.entity {
+    cursor: help
 }
