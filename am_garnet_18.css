@@ -44,7 +44,7 @@ section {
     background: var(--color-bg);
     color: var(--color-main);
 
-    background-image: linear-gradient(rgba(0, 0, 255, .1) .05em, transparent .15em), linear-gradient(90deg, rgba(0, 0, 255, .1) 0.05em, transparent 0.15em);
+    background-image: linear-gradient(rgba(0, 0, 255, .05) .05em, transparent .1em), linear-gradient(90deg, rgba(0, 0, 255, .05) 0.05em, transparent 0.1em);
     background-size: 4em 4em;
 }
 
