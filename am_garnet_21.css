@@ -70,7 +70,10 @@ h5 {
 }
 
 header {
-    top: 12px;
+    padding-top: 280px;
+    font-size: 72px;
+    font-weight: bold;
+    font-family: var(--font-family-title);
 }
 
 
