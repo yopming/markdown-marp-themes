@@ -1,0 +1,477 @@
+/* @theme am_garnet */
+@charset "UTF-8";
+@import 'https://cdn.bootcdn.net/ajax/libs/font-awesome/6.4.0/css/all.min.css';
+
+/* @import 'default'; */
+:root {
+    --font-family-main: 'Linux Libertine', serif;
+    --font-family-title: 'Philosopher', sans-serif;
+    --font-family-footer: 'Roboto', sans-serif;
+    --font-family-code: 'Iosevka', monospace;
+    --foot-size-subtitle: 42px;
+    --font-size-main: 26px;
+    --font-size-footer: 22px;
+    --font-size-page: 12px;
+    --font-size-code: 22px;
+    --color-title: rgb(255, 255, 255);
+    --color-footer: #8c8c8c;
+    --color-navbar-font: #73000a;
+    --color-few: #53a7a0;
+    --color-quote: rgba(254, 176, 98, 0.1);
+    --color-main: #211112;
+    --color-coverbg: #73000a;
+    --color-much: #73000a;
+    --color-trans: #73000a;
+    --color-bg: #fdfcff;
+    --color-navbar-bg: #edddde;
+    --color-code-bg: #f6eeef;
+}
+
+section {
+    font-family: var(--font-family-main);
+    font-size: var(--font-size-main);
+    color: var(--color-main);
+    font-size: 29px;
+    height: 720px;
+    justify-content: center;
+    padding: 0px 50px 25px 50px;
+    width: 1280px;
+    background: var(--color-bg);
+    color: var(--color-main);
+    background-image: linear-gradient(rgba(0, 0, 0, .03) .05em, transparent .15em), linear-gradient(90deg, rgba(0, 0, 0, .03) 0.05em, transparent 0.15em);
+    background-size: 3em 3em;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    font-weight: bold;
+    font-family: var(--font-family-title);
+}
+
+h2,
+h3,
+h4,
+h5 {
+    color: var(--color-much);
+}
+
+h1 {
+    font-size: 72px;
+    padding-top: 230px;
+    color: rgba(0, 0, 0);
+}
+
+h2 {
+    font-size: 48px;
+}
+
+h3 {
+    font-size: 42px;
+}
+
+h4,
+h5 {
+    font-size: 30px;
+}
+
+ol {
+    line-height: 1.4rem;
+    padding-left: 15%;
+}
+
+ul {
+    line-height: 1.4rem;
+    padding-left: 35px;
+}
+
+ul.a {
+    list-style-type: disc;
+}
+
+ul.b {
+    list-style-type: circle;
+}
+
+ul.c {
+    list-style-type: square;
+}
+
+ul li::marker {
+    color: var(--color-much);
+}
+
+blockquote {
+    border-left: 8px solid var(--color-much);
+    padding: 10px 25px;
+    background-color: var(--color-quote);
+    font-size: 0.9rem;
+    font-family: var(--font-family-main);
+}
+
+blockquote strong {
+    font-family: var(--font-family-main);
+}
+
+blockquote>p::before {
+    color: var(--color-much);
+    padding-right: 2%;
+    content: "\f10d";
+    font-family: "FontAwesome";
+}
+
+a {
+    font-size: 0.9rem;
+    padding: 0 .2rem;
+    color: var(--color-main);
+    font-family: var(--font-family-main);
+}
+
+a:hover {
+    color: var(--color-much);
+    text-decoration: underline;
+}
+
+a::after {
+    font-size: 0.6em;
+    padding-left: 0.5%;
+    content: "\f148";
+    /* f148 f0c1 f08e f14c f0c6 */
+    font-family: "FontAwesome";
+    color: var(--color-much);
+}
+
+section::after {
+    font-size: 16px;
+    margin-right: 0px;
+    margin-bottom: 0px;
+    font-weight: bold;
+    content: attr(data-marpit-pagination);
+    color: var(--color-footer);
+}
+
+footer {
+    color: var(--color-footer);
+    bottom: 1%;
+    left: 2%;
+    width: 100%;
+    height: 4%;
+    display: flex;
+    justify-content: space-between;
+}
+
+footer>em {
+    font-family: var(--font-family-footer);
+    font-size: var(--font-size-footer);
+    letter-spacing: 1px;
+    font-style: normal;
+}
+
+footer::after {
+    content: "";
+}
+
+.MathJax {
+    font-size: 0.95rem;
+}
+
+pre {
+    text-align: left;
+    border: 0.3px solid var(--color-few);
+    padding: 28px;
+    line-height: 115%;
+    overflow: auto;
+    font-size: var(--font-size-footer);
+    font-size: 0.9rem;
+}
+
+*::-webkit-scrollbar {
+    width: 3px;
+    height: 3px;
+}
+
+*::-webkit-scrollbar-track {
+    border-radius: 3px;
+    background-color: #f6f8fa;
+}
+
+*::-webkit-scrollbar-track:hover {
+    background-color: var(--color-few);
+}
+
+*::-webkit-scrollbar-track:active {
+    background-color: var(--color-few);
+}
+
+*::-webkit-scrollbar-thumb {
+    border-radius: 3px;
+    background-color: var(--color-few);
+}
+
+*::-webkit-scrollbar-thumb:hover {
+    background-color: var(--color-few);
+}
+
+*::-webkit-scrollbar-thumb:active {
+    background-color: var(--color-few);
+}
+
+code {
+    padding: 2px;
+    border-radius: 1px;
+    background-color: var(--color-code-bg);
+    font-family: var(--font-family-code);
+    font-size: 0.8rem;
+    letter-spacing: -1px;
+}
+
+strong {
+    font-size: 1.03rem;
+    font-weight: bolder;
+    color: var(--color-much);
+}
+
+em,
+i {
+    font-size: 0.9rem;
+    font-style: italic;
+}
+
+img {
+    max-width: 95%;
+    margin: auto;
+}
+
+img[alt*='#l'] {
+    float: left;
+}
+
+img[alt*='#r'] {
+    float: right;
+}
+
+img[alt*='#c'] {
+    display: block;
+    margin: auto;
+}
+
+table {
+    border-collapse: collapse;
+    text-align: center;
+    word-break: initial;
+    font-size: 0.8rem;
+    margin: 0 auto;
+}
+
+table code {
+    font-size: 0.7rem;
+}
+
+th,
+thead {
+    height: 40px;
+    border-top: 3px solid var(--color-main);
+    font-size: 105%;
+    padding: 6px;
+}
+
+th,
+thead:first-child {
+    border-bottom: 3px solid var(--color-main);
+}
+
+table tr:nth-child(2n) {
+    background-color: white;
+}
+
+tbody:last-child {
+    border-bottom: 3px solid var(--color-main)
+}
+
+table>thead>tr>th,
+table>thead>tr>td,
+table>tbody>tr>th,
+table>tbody>tr>td,
+table>tfoot>tr>th,
+table>tfoot>tr>td {
+    border: 0px solid white;
+}
+
+.hljs {
+    display: block;
+    overflow-x: auto;
+    padding: 0.5em;
+    font-size: small;
+}
+
+.hljs-comment {
+    color: #28a828;
+}
+
+.hljs-string {
+    color: #fd8f3f;
+}
+
+.hljs-number {
+    color: rgb(158, 158, 62);
+}
+
+.hljs-keyword {
+    color: #1111e2;
+}
+
+.hljs-symbol {
+    color: #ac1212;
+}
+
+.hljs-variable {
+    color: #fc5fa3;
+}
+
+.hljs-built_in {
+    color: #960ab9;
+}
+
+.hljs-emphasis {
+    font-style: italic;
+}
+
+.hljs-meta {
+    color: #2c2cff;
+}
+
+.hljs-literal {
+    color: #2c2cff;
+}
+
+.hljs-name {
+    color: #2c2cff;
+}
+
+.in-prompt {
+    color: #99bb88;
+}
+
+.in-prompt-number {
+    font-weight: bold;
+}
+
+.out-prompt {
+    color: #ff9090;
+}
+
+.out-prompt-number {
+    font-weight: bold;
+}
+
+.inverted {
+    background-color: white;
+    color: #232629;
+}
+
+/*** CSS for code highlight **/
+/* PrismJS 1.29.0
+https://prismjs.com/download.html#themes=prism&languages=markup+css+clike+javascript+abap+abnf+actionscript+ada+agda+al+antlr4+apacheconf+apex+apl+applescript+aql+arduino+arff+armasm+arturo+asciidoc+aspnet+asm6502+asmatmel+autohotkey+autoit+avisynth+avro-idl+awk+bash+basic+batch+bbcode+bbj+bicep+birb+bison+bnf+bqn+brainfuck+brightscript+bro+bsl+c+csharp+cpp+cfscript+chaiscript+cil+cilkc+cilkcpp+clojure+cmake+cobol+coffeescript+concurnas+csp+cooklang+coq+crystal+css-extras+csv+cue+cypher+d+dart+dataweave+dax+dhall+diff+django+dns-zone-file+docker+dot+ebnf+editorconfig+eiffel+ejs+elixir+elm+etlua+erb+erlang+excel-formula+fsharp+factor+false+firestore-security-rules+flow+fortran+ftl+gml+gap+gcode+gdscript+gedcom+gettext+gherkin+git+glsl+gn+linker-script+go+go-module+gradle+graphql+groovy+haml+handlebars+haskell+haxe+hcl+hlsl+hoon+http+hpkp+hsts+ichigojam+icon+icu-message-format+idris+ignore+inform7+ini+io+j+java+javadoc+javadoclike+javastacktrace+jexl+jolie+jq+jsdoc+js-extras+json+json5+jsonp+jsstacktrace+js-templates+julia+keepalived+keyman+kotlin+kumir+kusto+latex+latte+less+lilypond+liquid+lisp+livescript+llvm+log+lolcode+lua+magma+makefile+markdown+markup-templating+mata+matlab+maxscript+mel+mermaid+metafont+mizar+mongodb+monkey+moonscript+n1ql+n4js+nand2tetris-hdl+naniscript+nasm+neon+nevod+nginx+nim+nix+nsis+objectivec+ocaml+odin+opencl+openqasm+oz+parigp+parser+pascal+pascaligo+psl+pcaxis+peoplecode+perl+php+phpdoc+php-extras+plant-uml+plsql+powerquery+powershell+processing+prolog+promql+properties+protobuf+pug+puppet+pure+purebasic+purescript+python+qsharp+q+qml+qore+r+racket+cshtml+jsx+tsx+reason+regex+rego+renpy+rescript+rest+rip+roboconf+robotframework+ruby+rust+sas+sass+scss+scala+scheme+shell-session+smali+smalltalk+smarty+sml+solidity+solution-file+soy+sparql+splunk-spl+sqf+sql+squirrel+stan+stata+iecst+stylus+supercollider+swift+systemd+t4-templating+t4-cs+t4-vb+tap+tcl+tt2+textile+toml+tremor+turtle+twig+typescript+typoscript+unrealscript+uorazor+uri+v+vala+vbnet+velocity+verilog+vhdl+vim+visual-basic+warpscript+wasm+web-idl+wgsl+wiki+wolfram+wren+xeora+xml-doc+xojo+xquery+yaml+yang+zig */
+code[class*=language-], pre[class*=language-] {
+    color: #000;
+    background: 0 0;
+    text-shadow: 0 1px #fff;
+    font-family: 'Iosevka', monospace;
+    font-size: 1em;
+    text-align: left;
+    white-space: pre;
+    word-spacing: normal;
+    word-break: normal;
+    word-wrap: normal;
+    line-height: 1.1;
+    -moz-tab-size: 4;
+    -o-tab-size: 4;
+    tab-size: 4;
+    -webkit-hyphens: none;
+    -moz-hyphens: none;
+    -ms-hyphens: none;
+    hyphens: none
+}
+
+code[class*=language-] ::-moz-selection, code[class*=language-]::-moz-selection, pre[class*=language-] ::-moz-selection, pre[class*=language-]::-moz-selection {
+    text-shadow: none;
+    background: #b3d4fc
+}
+
+code[class*=language-] ::selection, code[class*=language-]::selection, pre[class*=language-] ::selection, pre[class*=language-]::selection {
+    text-shadow: none;
+    background: #b3d4fc
+}
+
+@media print {
+    code[class*=language-], pre[class*=language-] {
+        text-shadow: none
+    }
+}
+
+pre[class*=language-] {
+    padding: 1em;
+    margin: .5em 0;
+    overflow: auto
+}
+
+:not(pre)>code[class*=language-], pre[class*=language-] {
+    background: #f5f2f0
+}
+
+:not(pre)>code[class*=language-] {
+    padding: .1em;
+    border-radius: .3em;
+    white-space: normal
+}
+
+.token.cdata, .token.comment, .token.doctype, .token.prolog {
+    color: #708090
+}
+
+.token.punctuation {
+    color: #999
+}
+
+.token.namespace {
+    opacity: .7
+}
+
+.token.boolean, .token.constant, .token.deleted, .token.number, .token.property, .token.symbol, .token.tag {
+    color: #905
+}
+
+.token.attr-name, .token.builtin, .token.char, .token.inserted, .token.selector, .token.string {
+    color: #690
+}
+
+.language-css .token.string, .style .token.string, .token.entity, .token.operator, .token.url {
+    color: #9a6e3a;
+    background: hsla(0, 0%, 100%, .5)
+}
+
+.token.atrule, .token.attr-value, .token.keyword {
+    color: #07a
+}
+
+.token.class-name, .token.function {
+    color: #dd4a68
+}
+
+.token.important, .token.regex, .token.variable {
+    color: #e90
+}
+
+.token.bold, .token.important {
+    font-weight: 700
+}
+
+.token.italic {
+    font-style: italic
+}
+
+.token.entity {
+    cursor: help
+}
