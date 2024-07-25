@@ -42,7 +42,7 @@ section {
     font-size: 29px;
     height: 720px;
     justify-content: center;
-    padding: 78.5px;
+    padding: 15px 75px;
     width: 1280px;
     background: var(--color-bg);
     color: var(--color-main);
