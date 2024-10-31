@@ -1,6 +1,10 @@
 /* @theme am_garnet */
 @charset "UTF-8";
-@import 'https://cdn.bootcdn.net/ajax/libs/font-awesome/6.4.0/css/all.min.css';
+
+* {
+    margin: 0;
+    padding: 0;
+}
 
 /* @import 'default'; */
 :root {
@@ -40,6 +44,11 @@ section {
     color: var(--color-main);
     background-image: linear-gradient(rgba(0, 0, 0, .03) .05em, transparent .15em), linear-gradient(90deg, rgba(0, 0, 0, .03) 0.05em, transparent 0.15em);
     background-size: 3em 3em;
+}
+
+p {
+    margin-block-start: 0.5em;
+    margin-block-end: 0.5em;
 }
 
 h1,
@@ -148,8 +157,8 @@ a::after {
 
 section::after {
     font-size: 16px;
-    margin-right: 0px;
-    margin-bottom: 0px;
+    margin-right: -20px;
+    margin-bottom: -20px;
     font-weight: bold;
     content: attr(data-marpit-pagination);
     color: var(--color-footer);
@@ -181,10 +190,11 @@ footer::after {
 }
 
 pre {
+    margin: 10px 0;
     text-align: left;
     border: 0.3px solid var(--color-few);
-    padding: 28px;
-    line-height: 115%;
+    padding: 20px;
+    line-height: 1.1;
     overflow: auto;
     font-size: var(--font-size-footer);
     font-size: 0.9rem;
