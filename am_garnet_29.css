@@ -38,7 +38,7 @@ section {
     font-size: 29px;
     height: 720px;
     justify-content: center;
-    padding: 0px 50px 25px 50px;
+    padding: 25px 50px;
     width: 1280px;
     background: var(--color-bg);
     color: var(--color-main);
